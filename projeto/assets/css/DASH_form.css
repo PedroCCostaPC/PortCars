@@ -1,0 +1,546 @@
+
+/* TITULO */
+#titulo-form-publicar {
+    width: 100%;
+    float: left;
+    padding: 0 30px;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+#titulo-form-publicar h1 {
+    font-family: "Roboto-Light";
+    font-size: 26px;
+    color: var(--color_quatro);
+    font-weight: lighter;
+    text-transform: capitalize;
+}
+
+#titulo-form-publicar h1 span {
+    font-family: "Roboto-Regular";
+    font-weight: bold;
+    color: var(--color_tres);
+}
+
+#titulo-form-publicar p {
+    font-size: 16px;
+    color: var(--color_cinco);
+    text-transform: capitalize;
+    margin-top: 5px;
+}
+
+
+/* -------------- FORMUALRIO -------------- */
+#form-publica {
+    width: 100%;
+    float: left;
+    margin-top: 70px;
+}
+
+#form-publica .form {
+    width: 100%;
+    float: left;
+    padding: 0 100px;
+    box-sizing: border-box;
+}
+
+#form-publica .input-padrao .row {
+    position: relative;
+    width: 100%;
+    float: left;
+    margin-bottom: 100px;
+}
+
+#form-publica .input-padrao label {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: var(--color_cinco);
+    font-size: 16px;
+}
+
+#form-publica .input-padrao label span {
+    color: var(--color_oito);
+}
+
+#form-publica .input-padrao input,
+#form-publica .box-checkbox .campo-adicionado input {
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    color: var(--color_quatro);
+    background: var(--color_um);
+    border: transparent;
+    border-bottom: solid 1px var(--color_tres);
+    letter-spacing: 1px;
+}
+
+#form-publica .input-padrao input.invalido {
+    border-color: var(--color_oito);
+}
+
+#form-publica .input-padrao input:focus,
+#form-publica .box-checkbox .campo-adicionado input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    border-bottom: solid 1px var(--color_cinco);
+}
+
+#form-publica .input-padrao input::placeholder {
+    color: var(--color_seis);
+}
+
+#form-publica .input-padrao input.numero::-webkit-outer-spin-button,
+#form-publica .input-padrao input.numero::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* TEXTAREA */
+#form-publica .textarea {
+    width: 100%;
+    float: left;
+    background: var(--color_seis);
+    margin-top: 100px;
+    padding: 30px 70px;
+    box-sizing: border-box;
+    background: #2b2b2c;
+}
+
+#form-publica .textarea textarea {
+    width: 100%;
+    height: 1000px;
+    background: var(--color_cinco);
+    border: none;
+    color: var(--color_quatro);
+    font-size: 16px;
+    padding: 30px;
+    box-sizing: border-box;
+    line-height: 24px;
+    caret-color: var(--color_quatro);
+}
+
+#form-publica .textarea textarea.textarea-invalido {
+    border: solid 1px var(--color_oito);
+}
+
+#form-publica .textarea textarea:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+/* BOTAO PUBLICAR */
+#form-publica .bot-publicar {
+    margin-top: 70px;
+    font-size: 14px;
+    color: var(--color_quatro);
+    background: var(--color_tres);
+    border: solid 2px var(--color_tres);
+    padding: 25px 100px;
+    cursor: pointer;
+    transition: .3s;
+    letter-spacing: 1px;
+}
+
+#form-publica .bot-publicar:hover {
+    background: var(--color_um);
+}
+
+
+/* -------------- PAGINA PUBLICAR FABRICANTE -------------- */
+/* CAMPO CHECKBOX */
+#form-publica .box-checkbox {
+    width: 100%;
+    height: 500px;
+    float: left;
+    background: var(--color_quatro);
+    border-radius: 0 0 5px 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: .3s;
+    overflow: auto;
+}
+#form-publica .box-checkbox::-webkit-scrollbar {
+    width: 10px;
+}
+#form-publica .box-checkbox::-webkit-scrollbar-track {
+    background: transparent;
+}
+#form-publica .box-checkbox::-webkit-scrollbar-thumb {
+    background-color: var(--color_um);
+    border: solid 2px var(--color_quatro);
+    border-radius: 10px;
+}
+
+
+#form-publica .box-checkbox.anime {
+    height: 0px;
+    padding: 0 20px;
+}
+
+#form-publica .box-checkbox hr {
+    float: left;
+    width: 100%;
+    height: 1px;
+    margin-bottom: 50px;
+    border: none;
+    background: var(--color_dois);
+}
+
+#form-publica .box-checkbox .letra {
+    width: 100%;
+    float: left;
+}
+
+#form-publica .box-checkbox .letra p {
+    color: var(--color_quatro);
+    font-size: 14px;
+    text-transform: uppercase;
+    width: 35px;
+    height: 35px;
+    float: left;
+    background: var(--color_dois);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    margin-bottom: 30px;
+}
+
+#form-publica .box-checkbox .col {
+    width: 33%;
+    float: left;
+    margin-bottom: 35px;
+}
+
+#form-publica .box-checkbox .col input {
+    width: 30px;
+    height: 30px;
+    float: left;
+    cursor: pointer;
+}
+
+#form-publica .box-checkbox .col label {
+    float: left;
+    color: var(--color_seis);
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+/* BOTAO CHECKBOX */
+#form-publica .bot-checkbox {
+    width: 100%;
+    float: left;
+    font-size: 14px;
+    color: var(--color_quatro);
+    padding: 20px;
+    box-sizing: border-box;
+    border: solid 1px var(--color_quatro);
+    border-color: var(--color_um);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+    background: var(--color_tres);
+}
+
+#form-publica .bot-checkbox.check-invalido {
+    background: var(--color_oito_hover);
+}
+
+#form-publica .bot-checkbox i {
+    float: right;
+    transition: .3s;
+}
+
+#form-publica .bot-checkbox:hover,
+#form-publica .bot-setado {
+    background: var(--color_um);
+    border-color: var(--color_tres);
+}
+
+#form-publica .bot-setado {
+    border-radius: 5px 5px 0 0;
+}
+
+#form-publica .bot-setado i {
+    transform: rotate(90deg);
+}
+
+/* ADICIONAR */
+#form-publica .box-checkbox .adicionar {
+    float: left;
+    color: var(--color_quatro);
+    font-size: 14px;
+    background: var(--color_dois);
+    border: solid 2px var(--color_dois);
+    padding: 15px 35px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .3s;
+    margin-bottom: 50px;
+}
+
+#form-publica .box-checkbox .adicionar:hover {
+    background: var(--color_quatro);
+    color: var(--color_dois);
+}
+
+#form-publica .box-checkbox .campo-adicionado {
+    position: relative;
+    width: 100%;
+    float: left;
+    margin-top: 50px;
+}
+
+#form-publica .box-checkbox .campo-adicionado .row {
+    position: relative;
+    width: 90%;
+    float: left;
+    margin-bottom: 50px;
+    margin-left: 5%;
+}
+
+#form-publica .box-checkbox .campo-adicionado label {
+    position: absolute;
+    font-size: 14px;
+    color: var(--color_dois);
+    top: 10px;
+    font-weight: bold;
+}
+
+#form-publica .box-checkbox .campo-adicionado input {
+    background: var(--color_quatro);
+    color: var(--color_seis);
+    padding-left: 50px;
+    border-bottom: solid 2px var(--color_dois);
+    font-weight: bold;
+}
+
+#form-publica .box-checkbox .campo-adicionado input:focus {
+    border-bottom: solid 2px var(--color_dois);
+}
+
+/* LOGOTIPO */
+#form-publica .input-logo {
+    width: 100%;
+    float: left;
+    margin-top: 120px;
+    box-sizing: border-box;
+}
+
+#form-publica .input-logo input {
+    display: none;
+}
+
+#form-publica .input-logo .label-logo {
+    font-size: 16px;
+    color: var(--color_quatro);
+    float: left;
+    width: 100%;
+}
+
+#form-publica .input-logo .logo {
+    position: relative;
+    display: flex;
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    background: var(--color_cinco);
+    align-items: center;
+    margin-top: 20px;
+    transition: .5s;
+    color: var(--color_seis);
+    float: left;
+    border: dashed 2px var(--color_seis);
+    font-size: 25px;
+}
+
+#form-publica .input-logo .logo:hover {
+    background: var(--color_seis);
+    color: var(--color_um);
+    border: dashed 2px var(--color_um);
+}
+
+#form-publica .input-logo .logo .logo-atual {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#form-publica .input-logo .logo .logo-atual img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+#form-publica .input-logo span {
+    color: var(--color_oito);
+}
+
+#form-publica .input-logo .input-img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+
+/* -------------- PAGINA PUBLICAR MODELO -------------- */
+#form-publica .form .select {
+    width: 100%;
+    float: left;
+}
+
+#form-publica .form .select p {
+    margin-left: 20px;
+    color: var(--color_cinco);
+    font-size: 16px;
+}
+
+#form-publica .form .select p span {
+    color: var(--color_oito);
+}
+
+#form-publica .form .select .main-sel-fab {
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+}
+
+#form-publica .form .select .main-sel-fab .alfabeto {
+    width: 33%;
+    float: left;
+    margin-bottom: 70px;
+}
+
+#form-publica .form .select .main-sel-fab .alfabeto p {
+    text-transform: uppercase;
+    background: var(--color_tres);
+    color: var(--color_quatro);
+    width: 30px;
+    height: 30px;
+    padding-top: 5px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+#form-publica .form .select .main-sel-fab .alfabeto .opcoes {
+    width: 100%;
+    float: left;
+    margin-top: 25px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+#form-publica .form .select .main-sel-fab .alfabeto .opcoes label {
+    font-size: 16px;
+    color: var(--color_cinco);
+    text-transform: capitalize;
+    margin-left: 7px;
+    cursor: pointer;
+}
+
+#form-publica .form .select .main-sel-fab .alfabeto .opcoes input {
+    cursor: pointer;
+}
+
+#form-publica .form .select .main-sel-fab .link {
+    width: 100%;
+    float: left;
+    margin-bottom: 100px;
+}
+
+#form-publica .form .select .main-sel-fab .link a {
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--color_quatro);
+    background: var(--color_nove_hover);
+    padding: 12px 30px;
+    border: solid 2px var(--color_nove_hover);
+    transition: .3s;
+}
+
+#form-publica .form .select .main-sel-fab .link a:hover {
+    background: var(--color_um);
+}
+
+/* IMAGENS */
+#form-publica .form .input-imagens {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+}
+
+#form-publica .form .input-imagens input {
+    margin-top: 30px;
+    margin-left: -122px;
+    color: var(--color_cinco);
+}
+
+#form-publica .form .input-imagens .label-imagem {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--color_cinco);
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#form-publica .form .input-imagens #input-imagens-container {
+    float: left;
+    width: 100%;
+}
+
+#form-publica .form .input-imagens .imagem {
+    position: relative;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    background: var(--color_tres);
+    border: solid 2px var(--color_tres);
+    align-items: center;
+    justify-items: center;
+    transition: .5s;
+    color: var(--color_quatro);
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 30px 50px;
+    letter-spacing: 1px;
+}
+
+#form-publica .form .input-imagens .input-img {
+    width: 100%;
+    height: 100%;
+}
+
+#form-publica .form .input-imagens .imagem:hover {
+    background: var(--color_um);
+}
+
+
+#form-publica .form .imagens {
+    width: 100%;
+    float: left;
+}
+
+#form-publica .form .imagens img {
+    width: 20%;
+    float: left;
+}
+
+
+.radio-invalido {
+    background: var(--color_oito) !important;
+}
+
+
+
+
+
+
+

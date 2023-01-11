@@ -1,0 +1,142 @@
+
+#h2-modelo {
+    float: left;
+    margin-top: 100px;
+    margin-left: 50px;
+    padding:  5px 30px;
+    box-sizing: border-box;
+    border-left: solid 3px var(--color_tres);
+}
+
+#h2-modelo img {
+    float: left;
+    height: 30px;
+}
+
+#h2-modelo h2 {
+    display: block;
+    float: left;
+    margin-left: 15px;
+    font-size: 23px;
+    color: var(--color_cinco);
+    font-weight: lighter;
+    text-transform: capitalize;
+}
+
+/* -------------- ESPECIFICACOES -------------- */
+#especificacoes {
+    position: relative;
+    width: 100%;
+    float: left;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+#especificacoes .col-1 {
+    float: left;
+    width: 50%;
+    flex-grow: 1;
+    border: solid 1px var(--color_tres);
+    box-sizing: border-box;
+    margin-right: 30px;
+}
+
+#especificacoes .col-1 .col {
+    float: left;
+    width: 25%;
+    padding: 30px;
+    box-sizing: border-box;
+    min-height: 200px;
+}
+
+#especificacoes .col-1 .col p {
+    color: var(--color_cinco);
+    font-size: 14px;
+    line-height: 22px;
+}
+
+#especificacoes .col-1 .col p:first-child {
+    color: var(--color_tres);
+    margin-bottom: 10px;    
+}
+
+/* FOTO RAND */
+#especificacoes .col-2 {
+    float: left;
+    width: 320px;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+#especificacoes .col-2 img {
+    width: 150%;
+}
+
+/* -------------- GALERIA -------------- */
+#galeria {
+    width: 100%;
+    float: left;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+/* FOTO */
+#galeria .foto {
+    width: 100%;
+    float: left;
+}
+
+#wowslider-container1 {
+    z-index: 0;
+}
+
+#wowslider-container1 .ws_bullets a > span {
+    background-color: var(--color_cinco);
+}
+
+#wowslider-container1 .ws_bullets a.ws_selbull > span {
+    background-color: var(--color_tres);
+}
+
+/* -------------- TEXTO -------------- */
+#detalhes {
+    width: 100%;
+    float: left;
+    margin-top: 100px;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+#detalhes p {
+    font-size: 15px;
+    color: var(--color_cinco);
+    line-height: 22px;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+#detalhes p span {
+    color: var(--color_tres);
+}
+
+
+
+
+
+
+
+
+
+

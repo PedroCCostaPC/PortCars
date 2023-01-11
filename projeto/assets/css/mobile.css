@@ -1,0 +1,678 @@
+@media only screen and (max-width:  920px) {
+
+    header {
+        height: auto;
+        padding-bottom: 10px;
+        width: 100%;
+    }
+
+    header .container {
+        padding: 0 15px;
+        display: block;
+    }
+
+    /* LOGO */
+    header .logo {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    header .logo img {
+        width: 130px;
+    }
+
+    /* BUSCA */
+    header .busca {
+        float: left;
+        margin-top: 10px;
+        padding: 0;
+        width: 100%;
+    }
+
+    header .busca form input {
+        height: 45px;
+    }
+
+    header .busca form button {
+        top: 10px;
+    }
+
+    /* NAV */
+    header .bot-nav-moile {
+        position: absolute;
+        display: block;
+        top: 5px;
+        right: 20px;
+        cursor: pointer;
+        font-size: 30px;
+        color: var(--color_quatro);
+        transition: .5s;
+    }
+
+    header .nav .close {
+        display: block;
+        position: absolute;
+        font-size: 35px;
+        color: var(--color_quatro);
+        background: transparent;
+        border: none;
+        right: -40px;
+        top: 10px;
+        cursor: pointer;
+    }
+
+    header .dark-nav {
+        position: fixed;
+        display: block;
+        width: 0;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background: rgba(0, 0, 0, .5);
+        z-index: 9;
+        transition: .3s;
+    }
+
+    header .nav {
+        position: fixed;
+        width: 80%;
+        height: 100%;
+        left: -100%;
+        top: 0;
+        background: var(--color_dois);
+        z-index: 10;
+        padding: 0 30px;
+        box-sizing: border-box;
+        transition: .3s;
+    }
+
+    header nav ul li {
+        float: none;
+        margin-left: 0;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    header nav ul li:first-child a {
+        margin-top: 50px;
+    }
+
+    header nav ul a {
+        display: block;
+        width: 100%;
+        padding: 30px 0 !important;
+        border-bottom: solid 1px var(--color_um);
+    }
+
+    header nav ul .admin a {
+        border-bottom: solid 1px var(--color_um);
+    }
+
+    header nav ul li a:hover {
+        color: var(--color_quatro);
+    }
+
+    header nav ul .admin a:hover {
+        color: var(--color_cinco);
+        border-bottom: solid 1px var(--color_um);
+    }
+
+    /* --------------- PAGINA HOME --------------- */
+    #slide .slick-prev, 
+    #slide .slick-next {
+        width: 50px;
+        height: 50px;
+        top: 5px;
+        right: 5px;
+    }
+
+    #slide .slick-prev:hover, 
+    #slide .slick-next:hover {
+        background: rgba(0, 35, 79, .7);
+    }
+
+    #slide .slick-prev {
+        right: 60px;
+    }
+
+    #slide .slide .titulo {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        text-align: center;
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+        align-items: flex-end;
+    }
+
+    #slide .slide .titulo a {
+        display: block;
+        font-size: 18px;
+        padding: 20px 10px;
+        width: 100%;
+        box-sizing: border-box;
+        background: transparent;
+    }
+
+    /* MODELOS MAIS RECENTES */
+    #modelos-recentes .row-esquerda,
+    #modelos-recentes .row-direita,
+    #modelos-recentes .row-esquerda .esquerda,
+    #modelos-recentes .row-direita .direita {
+        height: auto;
+        float: left;
+    }
+
+    #modelos-recentes .row-esquerda .esquerda.anime,
+    #modelos-recentes .row-direita .direita.anime {
+        width: 100%;
+        opacity: 1;
+    }
+
+    /* TITULO / DATA */
+    #modelos-recentes .esquerda .titulo,
+    #modelos-recentes .esquerda .data-public,
+    #modelos-recentes .direita .titulo,
+    #modelos-recentes .direita .data-public  {
+        text-align: left;
+    }
+
+    #modelos-recentes .esquerda .titulo,
+    #modelos-recentes .direita .titulo {
+        padding: 35px 15px 0 15px;
+    }
+
+    #modelos-recentes .data-public {
+        padding: 10px 30px 0 15px;
+    }
+
+    #modelos-recentes .esquerda .titulo a.anime,
+    #modelos-recentes .direita .titulo a.anime {
+        opacity: 1;
+        margin-top: 0;
+    }
+
+    #modelos-recentes .esquerda .data-public p.anime,
+    #modelos-recentes .direita .data-public p.anime {
+        opacity: 1;
+    }
+
+    /* LADO IMG */
+    #modelos-recentes .col-1 {
+        width: 100%;
+        margin-top: 20px;
+        padding: 0 15px;
+        height: auto;
+    }
+
+    #modelos-recentes .col-1 img.anime {
+        border-radius: 0;
+        opacity: 1;
+        width: 100%;
+        height: auto;
+    }
+
+    /* LADO DESCRICAO */
+    #modelos-recentes .col-2 {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        padding: 0 25px;
+    }
+
+    #modelos-recentes .col-2 .veja-mais {
+        position: relative;
+        float: left;
+        width: 100%;
+        bottom: 0;
+        margin-top: 20px;
+        text-align: left;
+    }
+
+    #modelos-recentes .esquerda .col-2 .veja-mais,
+    #modelos-recentes .direita .col-2 .veja-mais {
+        left: 0;
+    }
+
+    #modelos-recentes .col-2 .veja-mais a {
+        padding: 15px 50px;
+    }
+
+    #modelos-recentes .col-2 .anime {
+        width: 0;
+    }
+
+    #modelos-recentes .col-2 .veja-mais .anime {
+        opacity: 1;
+    }
+
+    /*  FABRICANTES  */
+    #fabricantes-home {
+        margin-top: 50px;
+        padding: 50px;
+        box-sizing: border-box;
+    }
+
+    #fabricantes-home.anime {
+        margin-top: 50px;
+        opacity: 1;
+    }
+
+
+
+    /* -------------- PAGINA FABRICANTES -------------- */
+    #banner .box-shadow .bot {
+        padding: 0 20px;
+    }
+
+    #banner .box-shadow .bot .col-1,
+    #banner .box-shadow .bot .col-2 {
+        height: 80px;
+    }
+
+    #banner .box-shadow .bot .col-1 {
+        padding-right: 10px;
+    }
+
+    #banner .box-shadow .bot .col-2 {
+        padding-left: 10px;
+    }
+
+    #banner .box-shadow .bot .col-2 a {
+        font-size: 12px;
+    }
+
+    #banner .box-shadow .bot .col-1 h1,
+    #banner .box-shadow .bot .col-2 a p i {
+        font-size: 18px;
+    }
+
+    /* BOX FABRICANTES */
+    #fabricantes h2 {
+        margin-left: 20px;
+    }
+
+    #fabricantes .row {
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    #fabricantes .row a {
+        width: 50%;
+    }
+
+    #fabricantes .row a.anime {
+        opacity: 1;
+    }
+
+
+    /* -------------- CAMINHO / NAVEGACAO DAS PAGINAS -------------- */
+    .nav-caminho .col-1,
+    .nav-caminho .col-2 {
+        width: 100%;
+    }
+
+    .nav-caminho {
+        padding: 20px;
+    }
+
+    .nav-caminho p i {
+        margin: 0;
+    }
+
+    .nav-caminho p span {
+        font-size: 18px;
+    }
+
+    /* AUTOR E DATA */
+    .nav-caminho .col-2 {
+        float: left;
+        text-align: left;
+        margin-top: 25px;
+    }
+
+    .nav-caminho .col-2 p,
+    .nav-caminho .col-2 p span {
+        font-size: 11px;
+        line-height: 16px;
+    }
+
+
+    /* -------------- PAGINA DA FABRICANTE -------------- */
+    #titlulo-else {
+        padding: 20px;
+        display: block;
+    }
+
+    #titlulo-else .col {
+        width: 100%;
+    }
+
+    #titlulo-else .col:first-child {
+        border-right: none;
+    }
+
+    #titlulo-else .col:last-child {
+        padding-left: 0;
+    }
+
+    /* BANNER / SLOGAN */
+    #banner .slogan {
+        padding: 30px;
+        font-size: 22px;
+    }
+
+    /* BOT HISTORIA E MODELOS */
+    .bio-model button img {
+        height: 35px;
+    }
+
+    .bio-model {
+        padding: 0 20px;
+        margin-top: 30px;
+    }
+
+    .bio-model button {
+        font-size: 18px;
+        margin-right: 30px;
+    }
+
+    /* ESPECIFICACOES */
+    #historia .especificacao {
+        display: block;
+        padding: 0 40px;
+        box-sizing: border-box;
+    }
+
+    #historia .especificacao .col-1 {
+        width: 100%;
+        float: left;
+        display: flex;
+        padding-bottom: 50px;
+    }
+
+    #historia .especificacao .col-1 .img {
+        margin-left: auto;
+    }
+
+    #historia .especificacao .col-2 {
+        width: 100%;
+        margin: 0;
+    }
+
+    #historia .especificacao .col-2 .col {
+        width: 100%;
+        min-height: auto;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    #historia .especificacao .col-2 .col ul li {
+        display: block;
+        margin-left: 0;
+    }
+
+    /* MODELOS RECENTES */
+    #historia .recentes .carousel .col {
+        height: auto;
+    }
+
+    #historia .recentes .carousel .col:hover img {
+        width: 100%;
+    }
+
+    #historia .recentes .carousel .col:hover .box img {
+        height: 18px;
+        width: auto;
+    }
+
+    #historia .recentes {
+        margin-top: 50px;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    /* BIOGRAFIA */
+    #historia .bio {
+        margin-top: 50px;
+        padding: 0 30px;
+    }
+
+    /*  PAGINA DA FABRICANTE (MODELOS)  */
+    #modelos {
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    #modelos a {
+        width: 100%;
+        border: none;
+        margin-bottom: 10px;
+    }
+
+    #modelos a .img img,
+    #modelos a .nome,
+    #modelos a .resumo,
+    #modelos a .veja-mais {
+        opacity: 1;
+    }
+
+
+    /* -------------- PAGINA DO MODELO -------------- */
+    #h2-modelo {
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+
+    #h2-modelo img {
+        height: 25px;
+    }
+    
+    #h2-modelo h2 {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+    /* ESPECIFICACOES */
+    #especificacoes {
+        margin-top: 70px;
+        padding: 0 40px;
+    }
+
+    #especificacoes .col-1 {
+        margin-right: 0;
+    }
+
+    #especificacoes .col-1 .col {
+        width: 100%;
+        min-height: auto;
+        text-align: center;
+    }
+
+    #especificacoes .col-2 {
+        display: none;
+    }
+
+    /* GALERIA DE FOTOS */
+    #galeria {
+        display: block;
+        padding: 0 20px;
+    }
+
+    #wowslider-container1 .ws_bullets {
+        display: none;
+    }
+
+    /* TEXTO */
+    #detalhes {
+        margin-top: 70px;
+        padding: 0 30px;
+    }
+
+
+
+    /* -------------- PAGINA DE BUSCA -------------- */
+    #titulo-busca {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 50px;
+        padding: 0;
+        border-bottom: solid 2px var(--color_seis);
+    }
+
+    #titulo-busca.titulo-sem-busca {
+        border-bottom: none;
+    }
+
+    #titulo-busca.titulo-sem-busca p {
+        margin-top: 50px;
+    }
+
+    #titulo-busca .filtro-mobile {
+        display: block;
+        float: right;
+        margin-top: -40px;
+    }
+
+    #titulo-busca .filtro-mobile button {
+        background: transparent;
+        border: none;
+        font-size: 14px;
+        color: var(--color_tres);
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    /* FILTRO */
+    #filtro {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background: var(--color_um);
+        margin-top: 0;
+        overflow: auto;
+        transition: .3s;
+    }
+
+    #filtro .row .close-filter {
+        display: block;
+        border: none;
+        font-size: 25px;
+        color: var(--color_quatro);
+        background: transparent;
+        float: right;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+
+    #filtro .row .col:last-child {
+        padding-bottom: 50px;
+        border-bottom: none;
+    }
+
+
+    /* BUSCA */
+    #busca {
+        width: 90%;
+        margin-top: 50px;
+        margin-left: 5%;
+        padding-right: 0;
+    }
+
+    .busca-modelos.col {
+        width: 100%;
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 40px;
+    }
+
+    .busca-modelos.col a {
+        transition: 0;
+    }
+
+    #busca.busca-rand .busca-modelos.col {
+        width: 100%;
+    }
+
+   
+
+    /* -------------- PAGINA DE LOGIN -------------- */
+    #login-main #login {
+        width: 90%;
+        margin-top: 50px;
+        padding: 50px 20px;
+    }
+
+    /* -------------- MENSAGEM DOS FORMULARIOS -------------- */
+    #mensagem {
+        width: 90%;
+    }
+
+
+    /* -------------- FOOTER -------------- */
+    footer {
+        margin-top: 50px;
+    }
+
+    #footer {
+        padding: 20px 40px;
+        margin-top: 70px;
+    }
+
+    #footerBox {
+        display: block;
+    }
+
+    #footerBox .col-1,
+    #footerBox .col-2 {
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    #footerBox .col-2 {
+        padding: 80px 40px 20px 40px;
+        box-sizing: border-box;
+    }
+
+    #footerBox .col-1 {
+        border: none;
+    }
+
+    #footerBox .col-1 .row {
+        width: 100%;
+    }
+
+    #footerBox a:hover {
+        text-decoration: none;
+    }
+
+
+    #footerBox .col-2 i {
+        display: none;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

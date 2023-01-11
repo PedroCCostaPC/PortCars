@@ -1,0 +1,474 @@
+* {
+	margin: 0 auto;
+	padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color_um: #1d1d1e;
+    --color_dois: #00234f;
+    --color_tres: #066fdb;
+    --color_quatro: #fff;
+    --color_cinco: #707071;
+    --color_seis: #3e3e3f;
+    --color_sete: #218204;
+    --color_sete_hover: #124901;
+    --color_oito: #ff0000;
+    --color_oito_hover: #890202;
+    --color_nove: #ffc104;
+    --color_nove_hover: #a35301;
+}
+
+body {
+    background: var(--color_um);
+    font-family: "Roboto-Regular";
+}
+
+.container {
+    width: 100%;
+    max-width: 1600px;
+    overflow: hidden;
+}
+
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: block;
+    background: var(--color_um);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9;
+}
+
+/* --------------------- SCROLL DA PAGINA --------------------- */
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+    background: var(--color_seis);
+}
+ 
+::-webkit-scrollbar-thumb {
+    background-color: var(--color_um);
+    border: solid 2px var(--color_seis);
+    border-radius: 10px;
+}
+
+
+/* -------------- HEADER -------------- */
+header {
+    width: 100%;
+    float: left;
+    background: var(--color_dois);
+    height: 100px;
+}
+
+header .container {
+    padding: 0 30px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+header .logo,
+header .busca {
+    float: left;
+}
+
+/* LOGO */
+header .logo {
+    margin-top: 35px;
+}
+
+header .logo img {
+    width: 170px;
+}
+
+/* BUSCA */
+header .busca {
+    margin-top: 25px;
+    padding: 0 50px;
+    box-sizing: border-box;
+    flex-grow: 1;
+    text-align: center;
+}
+
+header .busca form {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+}
+
+header .busca form input {
+    width: 100%;
+    height: 50px;
+    background: var(--color_um);
+    border: none;
+    color: var(--color_quatro);
+    font-size: 14px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+header .busca form input:focus {
+    outline: none;
+}
+
+header .busca form input::placeholder {
+    color: var(--color_seis);
+}
+
+header .busca form button {
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    color: var(--color_seis);
+    font-size: 22px;
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+
+/* NAV */
+header .bot-nav-moile,
+header .nav button {
+    display: none;
+}
+
+header .nav {
+    float: right;
+}
+
+header nav ul li {
+    display: inline;
+    float: left;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+header nav ul li:first-child {
+    margin-left: 0;
+}
+
+header nav ul li a {
+    font-size: 16px;
+    color: var(--color_quatro);
+    text-decoration: none;
+    padding-bottom: 3px;
+}
+
+header nav ul li a:hover {
+    color: var(--color_tres);
+}
+
+header nav ul .admin a {
+    color: var(--color_cinco);
+    border-bottom: solid 2px var(--color_cinco);
+}
+
+header nav ul .admin a:hover {
+    color: var(--color_sete);
+    border-color: var(--color_sete);
+}
+
+
+/* -------------- BANNER DE INICIO DAS PAGINAS -------------- */
+#banner {
+    position: relative;
+    width: 100%;
+    float: left;
+    max-height: 820px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+#banner img {
+    width: 100%;
+}
+
+#banner .box-shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .3), rgba(0, 0, 0, 1));
+}
+
+#banner .box-shadow .bot {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+#banner .box-shadow .bot .col-1,
+#banner .box-shadow .bot .col-2 {
+    float: left;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#banner .box-shadow .bot .col-1 {
+    padding-right: 20px;
+    border-right: solid 2px var(--color_quatro);
+}
+
+#banner .box-shadow .bot .col-1 h1 {
+    font-size: 40px;
+    color: var(--color_quatro);
+    font-family: "Roboto-Light";
+    font-weight: lighter;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+#banner .box-shadow .bot .col-2 {
+    padding-left: 20px;
+}
+
+#banner .box-shadow .bot .col-2 a {
+    text-decoration: none;
+    color: var(--color_quatro);
+    font-size: 16px;
+    font-family: "Roboto-Light";
+    letter-spacing: 2px;
+}
+
+#banner .box-shadow .bot .col-2 a p i {
+    font-size: 30px;
+}
+
+/* -------------- CAMINHO / NAVEGACAO DAS PAGINAS -------------- */
+.nav-caminho {
+    width: 100%;
+    float: left;
+    padding: 20px 50px;
+    box-sizing: border-box;
+}
+
+.nav-caminho .col-1 {
+    float: left;
+}
+
+.nav-caminho p {
+    font-size: 13px;
+    color: var(--color_cinco);
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.nav-caminho p a {
+    text-decoration: none;
+    color: var(--color_cinco);
+}
+
+.nav-caminho p a:hover {
+    color: var(--color_tres);
+}
+
+.nav-caminho p i {
+    margin: 0 5px;
+}
+
+.nav-caminho p span {
+    font-size: 20px;
+    color: var(--color_tres);
+    text-transform: capitalize;
+}
+
+/* AUTOR E DATA */
+.nav-caminho .col-2 {
+    float: right;
+    text-align: right;
+}
+
+.nav-caminho .col-2 p {
+    line-height: 18px;
+}
+
+.nav-caminho .col-2 p span {
+    font-size: 13px;
+    text-transform: capitalize;
+}
+
+
+/* -------------- MENSAGEM DOS FORMULARIOS -------------- */
+#main-mensagem {
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#mensagem {
+    position: absolute;
+    width: 50%;
+    text-align: center;
+    font-size: 14px;
+    padding: 20px;
+    box-sizing: border-box;
+    top: 0;
+    transition: .5s;
+}
+
+#mensagem span {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+#mensagem.msg-erro {
+    color: #ce0101;
+    background: #ffc8c8;
+}
+
+#mensagem.msg-sucesso {
+    color: #0a5300;
+    background: #b3ffa9;
+}
+
+.msg-rascunho {
+    color: var(--color_nove_hover);
+}
+
+#mensagem .nome {
+    text-transform: capitalize;
+}
+
+/* VISUALIZACAO DE RASCUNHO */
+#main-rascunho {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+#visualiza-rascunho {
+    position: absolute;
+    width: 500px;
+    padding: 20px 0;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, .7);
+    border-top: solid 3px var(--color_quatro);
+    border-bottom: solid 3px var(--color_quatro);
+    text-align: center;
+    transform: rotate(-45deg);
+    top: 90px;
+    left: -110px;
+    margin-left: 0;
+}
+
+#visualiza-rascunho p {
+    color: var(--color_quatro);
+    font-size: 25px;
+}
+
+
+
+/* -------------- FOOTER -------------- */
+footer {
+    width: 100%;
+    background: var(--color_dois);
+    margin-top: 150px;
+    float: left;
+}
+
+#footer {
+    width: 100%;
+    float: left;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+#footerBox {
+    position: relative;
+    width: 100%;
+    max-width: 1750px;
+    display: flex;
+    align-items: flex-end;
+}
+
+#footerBox p {
+    color: var(--color_quatro);
+    font-size: 14px;
+    line-height: 25px;
+    font-family: "Roboto-Light";
+}
+
+#footerBox a {
+    color: #7cbfff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#footerBox a:hover {
+    color: var(--color_tres);
+    text-decoration: underline;
+}
+
+#footerBox .col-1 {
+    width: 30%;
+    padding: 50px 0;
+    border-right: solid 5px var(--color_um);
+    box-sizing: border-box;
+    float: left;
+}
+
+#footerBox .col-1 .row {
+    margin-left: 0;
+    width: 90%;
+    margin-top: 40px;
+    border-bottom: solid 1px var(--color_um);
+    padding-bottom: 15px;
+}
+
+#footerBox .col-1 .row .linguagem-utilizadas {
+    font-size: 22px;
+}
+
+#footerBox .col-1 .row .linguagem-utilizadas i {
+    margin: 0 5px;
+    margin-top: 10px;
+}
+
+#footerBox .col-1 .row:first-child {
+    margin-top: 0;
+}
+
+#footerBox .col-2 {
+    width: 70%;
+    float: left;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#footerBox .col-2 i {
+    font-size: 200px;
+    margin-bottom: 200px;
+    color: var(--color_tres);
+}
+
+
+
+
+
+
+
+
+

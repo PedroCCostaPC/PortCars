@@ -1,0 +1,69 @@
+
+#login-main {
+    width: 100%;
+}
+
+#login-main #login {
+    width: 450px;
+    margin-top: 100px;
+    background: var(--color_dois);
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+#login-main #login h1 {
+    text-align: center;
+    color: var(--color_quatro);
+    font-weight: lighter;
+}
+
+#login-main #login form .row {
+    margin-top: 50px;
+}
+
+#login-main #login form .row label {
+    width: 100%;
+    display: block;
+    color: var(--color_quatro);
+    font-size: 16px;
+}
+
+#login-main #login form .row input {
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background: var(--color_um);
+    padding: 0 20px;
+    box-sizing: border-box;
+    color: var(--color_quatro);
+    font-size: 14px;
+}
+
+#login-main #login form .row input:focus {
+    outline: none;
+}
+
+#login-main #login form .row input::placeholder {
+    color: var(--color_seis);
+}
+
+#login-main #login form button {
+    margin-top: 50px;
+    color: var(--color_quatro);
+    background: var(--color_sete);
+    border: solid 2px var(--color_sete);
+    width: 100%;
+    font-size: 14px;
+    padding: 20px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#login-main #login form button:hover {
+    color: var(--color_sete);
+    background: var(--color_dois);
+    border-color: var(--color_sete);
+}

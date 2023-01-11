@@ -1,0 +1,415 @@
+
+#fabricantes {
+    position: relative;
+    width: 100%;
+    float: left;
+    margin-top: 80px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+#fabricantes h2 {
+    margin-left: 50px;
+    font-size: 25px;
+    color: var(--color_cinco);
+    font-family: "Roboto-Light";
+    font-weight: lighter;
+    border-left: solid 3px var(--color_tres);
+    padding: 5px 20px;
+    letter-spacing: 1px;
+}
+
+#fabricantes .row {
+    width: 100%;
+    float: left;
+    margin-top: 70px;
+}
+
+#fabricantes .row a {
+    display: flex;
+    float: left;
+    width: 20%;
+    background: var(--color_quatro);
+    border: solid 1px var(--color_um);
+    box-sizing: border-box;
+    align-items: center;
+    filter: grayscale(1);
+    transition: 1s;
+}
+
+#fabricantes .row a.anime {
+    opacity: 0;
+}
+
+#fabricantes .row a img {
+    max-width: 55%;
+    max-height: 55%;
+}
+
+#fabricantes .row a:hover {
+    filter: grayscale(0);
+    transform: rotate(360deg);
+}
+
+
+/* -------------- PAGINA DA FABRICANTE -------------- */
+#titlulo-else {
+    float: left;
+    padding: 50px;
+    color: var(--color_cinco);
+    display: flex;
+    align-items: center;
+}
+
+#titlulo-else .col:first-child {
+    padding-right: 15px;
+    border-right: solid 2px var(--color_cinco);
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+#titlulo-else .col h1 {
+    font-weight: lighter;
+    text-transform: capitalize;
+}
+
+#titlulo-else .col:last-child {
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+/* BANNER / SLOGAN */
+#banner .slogan {
+    position: absolute;
+    width: 100%;
+    background: rgba(0, 0, 0, .75);
+    color: var(--color_quatro);
+    font-size: 30px;
+    padding: 50px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#banner .slogan::first-letter {
+    text-transform: uppercase;
+}
+
+/* BOT HISTORIA E MODELOS */
+.bio-model {
+    width: 100%;
+    float: left;
+    padding: 0 50px;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+.bio-model button {
+    float: left;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: var(--color_cinco);
+    font-size: 20px;
+    margin-right: 40px;
+}
+
+.bio-model button img {
+    height: 50px;
+    margin-right: 10px;
+    filter: grayscale(1);
+}
+
+.bio-model button:hover {
+    color: var(--color_tres);
+}
+
+.bio-model button:hover img,
+.bio-model .bot-atual img {
+    filter: grayscale(0);
+}
+
+.bio-model .bot-atual {
+    color: var(--color_tres);
+}
+
+
+/* -------------- HISTORIA -------------- */
+#historia {
+    width: 100%;
+    float: left;
+    margin-top: 50px;
+}
+
+/* ESPECIFICACOES */
+#historia .especificacao {
+    width: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#historia .especificacao .col-1 .img {
+    float: left;
+    width: 250px;
+    height: 250px;
+    margin-left: 50px;
+    border-radius: 10px;
+    background: var(--color_quatro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#historia .especificacao .col-1 .img img {
+    max-width: 60%;
+    max-height: 60%;
+}
+
+#historia .especificacao .col-2 {
+    width: 50%;
+    float: left;
+    flex-grow: 1;
+    margin: 0 30px;
+    border: solid 1px var(--color_tres);
+    box-sizing: border-box;
+    padding: 0 30px;
+}
+
+#historia .especificacao .col-2 .col {
+    float: left;
+    width: 25%;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    min-height: 200px;
+}
+
+#historia .especificacao .col-2 .col p {
+    font-size: 14px;
+    color: var(--color_tres);
+}
+
+
+#historia .especificacao .col-2 .col ul {
+    margin-top: 15px;
+}
+
+#historia .especificacao .col-2 .col ul li {
+    color: var(--color_cinco);
+    font-size: 14px;
+    margin-left: 15px;
+    margin-top: 5px;
+    line-height: 20px;
+}
+
+#historia .especificacao .col-2 .col ul li a {
+    color: var(--color_cinco);
+    text-decoration: none;
+}
+
+#historia .especificacao .col-2 .col ul li a:hover {
+    color: var(--color_quatro);
+    text-decoration: underline;
+}
+
+/* MODELOS RECENTES */
+#historia .recentes {
+    width: 100%;
+    float: left;
+    margin-top: 150px;
+}
+
+#historia .recentes .carousel .slick-prev,
+#historia .recentes .carousel .slick-next {
+    display: none !important;
+}
+
+#historia .recentes .carousel .col {
+    position: relative;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#historia .recentes .carousel .col img {
+    width: 100%;
+    transition: 1s;
+}
+
+#historia .recentes .carousel .col:hover img {
+    width: 120%;
+}
+
+#historia .recentes .carousel .col .box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#historia .recentes .carousel .col .box img {
+    height: 18px;
+    width: auto;
+    float: left;
+    margin-right: 15px;
+}
+
+#historia .recentes .carousel .col .box p {
+    font-size: 14px;
+    color: var(--color_cinco);
+}
+
+/* BIOGRAFIA */
+#historia .bio {
+    width: 100%;
+    float: left;
+    margin-top: 150px;
+    padding: 0 50px;
+    box-sizing: border-box;
+    color: var(--color_cinco);
+    text-align: justify;
+}
+
+#historia .bio p {
+    line-height: 22px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+#historia .bio p span {
+    color: var(--color_tres);
+}
+
+
+/* -------------- PAGINA DA FABRICANTE (MODELOS) -------------- */
+#modelos {
+    width: 100%;
+    float: left;
+    margin-top: 50px;
+    display: none;
+}
+
+#modelos a {
+    display: block;
+    float: left;
+    width: 33.3%;
+    text-decoration: none;
+    background: var(--color_quatro);
+    border: solid 2px var(--color_um);
+    box-sizing: border-box;
+}
+
+#modelos a .img {
+    height: 250px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#modelos a .img img {
+    width: 100%;
+    opacity: .4;
+    transition: 1s;
+}
+
+#modelos a:hover .img img {
+    width: 120%;
+    opacity: 1;
+}
+
+#modelos a .nome {
+    width: 100%;
+    padding: 5px 20px;
+    box-sizing: border-box;
+}
+
+#modelos a .nome p {
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0;
+    color: var(--color_dois);
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+#modelos a .nome p img {
+    height: 20px;
+    margin-right: 10px;
+}
+
+#modelos a .resumo {
+    width: 100%;
+    float: right;
+    margin-top: 25px;
+    padding: 0 20px 0 70px;
+    box-sizing: border-box;
+}
+
+#modelos a .resumo p {
+    text-align: right;
+    font-size: 14px;
+    color: var(--color_cinco);
+}
+
+#modelos a .veja-mais {
+    width: 100%;
+    float: right;
+    text-align: right;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+
+#modelos a .veja-mais p {
+    display: block;
+    float: right;
+    color: var(--color_quatro);
+    background: var(--color_dois);
+    border: solid 1px var(--color_dois);
+    padding: 15px 50px;
+    font-size: 12px;
+    transition: 1s;
+    font-weight: bold;
+}
+
+#modelos a:hover .veja-mais p {
+    color: var(--color_dois);
+    background: var(--color_quatro);
+}
+
+#modelos a .nome,
+#modelos a .resumo,
+#modelos a .veja-mais {
+    opacity: .4;
+    transition: 1s;
+}
+
+#modelos a:hover .nome,
+#modelos a:hover .resumo,
+#modelos a:hover .veja-mais {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+

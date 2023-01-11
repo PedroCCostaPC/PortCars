@@ -1,0 +1,300 @@
+@media only screen and (max-width:  920px) {
+
+    header.dash-header .logo {
+        margin-left: 0;
+        margin-top: 18px;
+    }
+
+    header.dash-header .bot-nav-moile {
+        top: 10px;
+    }
+
+    header.dash-header nav ul {
+        display: block;
+        align-items: center;
+        justify-items: center;
+    }
+
+
+    header.dash-header nav ul li p {
+        margin-top: 30px;
+    }
+
+    header.dash-header nav ul li form button.sair {
+        width: 100%;
+        margin-top: 50px;
+        padding: 20px 0;
+        border-radius: 0;
+    }
+
+    /* TITULO */
+    #titulo {
+        padding: 0 20px;
+    }
+
+    #titulo h1 {
+        font-size: 22px;
+    }
+
+    /* MENU DASH */
+    #menu-dash {
+        width: 100%;
+        padding: 0;
+    }
+
+    #menu-dash .bot-new-post {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 1;
+        background: var(--color_tres);
+        box-shadow: none;
+    }
+
+    #menu-dash button {
+        padding: 10px 20px;
+        font-size: 30px;
+        border-radius: 100%;
+        float: left;
+    }
+
+    #menu-dash button span {
+        display: none;
+    }
+
+    #menu-dash nav {
+        text-align: left;
+    }
+
+
+    /* NOVA POSTAGEM */
+    .box-fundo .box {
+        width: 90%;
+        max-width: 80%;
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .new-post .box-fundo .box .col {
+        width: 100%;
+        text-align: center;
+    }
+
+    .new-post .box-fundo .box .col-fab {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    #menu-dash nav {
+        padding: 0;
+    }
+
+    #menu-dash nav button {
+        display: block;
+        float: right;
+        margin-top: -150px;
+        padding: 10px 25px;
+        font-size: 25px;
+        box-shadow: none;
+    }
+    #menu-dash nav button:hover {
+        background: var(--color_um);
+    }
+
+    #menu-dash nav .close {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    #menu-dash nav .nav {
+        position: fixed;
+        width: 0;
+        height: 0;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        background: rgba(0, 35, 79, .5);
+        overflow: hidden;
+        z-index: 2;
+    }
+
+    #menu-dash nav .nav ul {
+        display: block;
+        background: var(--color_quatro);
+        padding: 50px 50px 0 50px;
+        opacity: 1;
+        transition: .3s;
+    }
+
+    #menu-dash nav .nav ul.anime{
+        opacity: 0;
+    }
+
+    #menu-dash nav .nav ul li a {
+        color: var(--color_dois);
+    }
+
+    /* PUBLICACOES */
+    #publicacoes {
+        width: 90%;
+        margin-top: -30px;
+        margin-left: 5%;
+    }
+
+    #publicacoes .row {
+        height: 150px;
+        padding: 15px 0 15px 10px;
+    }
+
+    #publicacoes .row .col-1 {
+        width: 30%;
+    }
+
+    #publicacoes .row .col-1 a {
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #publicacoes .row .col-1 a img {
+        max-height: 100%;
+        max-width: 150%;
+    }
+
+    #publicacoes .row .col-2 {
+        position: relative;
+        width: 50%;
+        height: 100%;
+    }
+    
+    #publicacoes .row .col-2 span,
+    #publicacoes .row .col-2 small {
+        display: none;
+    }
+
+    #publicacoes .row .col-2 a {
+        margin-top: 10px;
+    }
+
+    #publicacoes .row .col-2 p {
+        position: absolute;
+        bottom: 10px;
+    }
+
+    #publicacoes .row .col-3 {
+        width: 10%;
+    }
+
+    #publicacoes .row .col-3 .autor,
+    #publicacoes .row .col-3 .id {
+        display: none;
+    }
+
+    #publicacoes .row .col-3 .botoes {
+        margin-top: 0;
+        display: block;
+    }
+
+    #publicacoes .row .col-3 .botoes ul li {
+        margin: 5px;
+    }
+
+    #publicacoes .row .col-3 .botoes ul li:first-child {
+        margin-top: -10px;
+    }
+
+    #publicacoes .row .col-3 .botoes ul li:hover .descricao {
+        display: none;
+    }
+
+    /* PAGINAS DE CRIAR POST */
+    #form-publica .form {
+        padding: 0 20px;
+    }
+
+    #form-publica .box-checkbox .col {
+        width: 100%;
+    }
+
+    #form-publica .textarea {
+        padding: 30px 20px;
+    }
+
+    #form-publica .textarea textarea {
+        height: 700px;
+    }
+
+    #form-publica .form .select-fabricante .main-sel-fab .alfabeto {
+        width: 100%;
+    }
+
+    #form-publica .form .select-fabricante .main-sel-fab .alfabeto .opcoes {
+        width: 50%;
+    }
+
+    #form-publica .form .select-fabricante .main-sel-fab .alfabeto .opcoes label {
+        font-size: 14px;
+    }
+
+    /* IMAGENS */
+    #form-publica .form .input-imagens {
+        padding: 0;
+    }
+
+    #form-publica .form .input-imagens input {
+        display: none;
+    }
+
+
+    /* PAGINDA DE FUNCIONARIOS */
+    #funcionarios {
+        width: 100%;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    #funcionarios .cadastra-funci a {
+        float: none;
+    }
+
+    #funcionarios .row {
+        display: block;
+        padding: 0 10px;
+        box-sizing: border-box;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    #funcionarios .row .col-1 {
+        box-sizing: border-box;
+        padding: 0;
+        margin-bottom: 30px;
+        width: 100% !important;
+    }
+
+    #funcionarios .row .altera-demiti {
+        float: none;
+        display: block;
+    } 
+
+    #funcionarios .row .col-2 {
+        width: 100%;
+        margin-bottom: 30px;
+        display: flex;
+        margin-left: 0;
+    }
+
+    #funcionarios .row .col-2 a,
+    #funcionarios .row .col-2 button {
+        width: 120px;
+        padding: 15px 0;
+    }
+
+
+
+
+}
